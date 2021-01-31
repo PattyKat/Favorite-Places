@@ -1,0 +1,39 @@
+{
+  "name": "favorite-places",
+  "version": "1.0.0",
+  "description": "'an app that allows me to learn google api'",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon Server/index.js",
+    "build": "webpack -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PattyKat/Favorite-Places.git"
+  },
+  "author": "Patrice Cottman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PattyKat/Favorite-Places/issues"
+  },
+  "homepage": "https://github.com/PattyKat/Favorite-Places#readme",
+  "dependencies": {
+    "@babel/preset-env": "^7.12.11",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "dot-env": "0.0.1",
+    "express": "^4.17.1",
+    "node": "^15.7.0",
+    "nodemon": "^2.0.7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack": "^5.19.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "webpack-cli": "^4.4.0"
+  }
+}
