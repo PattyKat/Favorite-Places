@@ -1,4 +1,5 @@
 var path = require('path');
+const Dotenv = require('dotenv-webpack');
 
 const SRC_DIR = path.join(__dirname, '/Client/src');
 const PUBLIC_DIR = path.join(__dirname, '/Client/public');
@@ -20,6 +21,9 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new Dotenv()
+  ],
   mode: 'development',
   resolve: {
     extensions: ['*', '.js', '.jsx'],

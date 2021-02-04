@@ -20,9 +20,11 @@
   "homepage": "https://github.com/PattyKat/Favorite-Places#readme",
   "dependencies": {
     "@babel/preset-env": "^7.12.11",
+    "@react-google-maps/api": "^2.1.1",
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
-    "dot-env": "0.0.1",
+    "dotenv": "^8.2.0",
+    "dotenv-webpack": "^6.0.0",
     "express": "^4.17.1",
     "node": "^15.7.0",
     "nodemon": "^2.0.7",
