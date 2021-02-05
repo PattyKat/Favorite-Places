@@ -1,5 +1,22 @@
 body, html {
-  margin: 0;
+  margin: 0 auto;
   height: 100%;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('fedhill.jpeg');
+  background-size: cover;
+  background-attachment:fixed;
 }
+
+span {
+  text-align: center;
+  width:100%;
+  margin:10px;
+  font-size:20px;
+  color:antiquewhite;
+}
+/* #app {
+  margin-left: 20%;
+  margin-top: 20px;
+} */

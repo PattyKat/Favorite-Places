@@ -6,7 +6,7 @@ class Map extends React.Component {
   constructor(props) {
     super(props);
     this.state ={
-      containerStyle: {width: '400px', height: '400px'},
+      containerStyle: {width: '600px', height: '600px'},
       center: {lat: 39.2904, lng: -76.6122},
     }
   }
@@ -21,7 +21,7 @@ class Map extends React.Component {
         <GoogleMap
           mapContainerStyle={this.state.containerStyle}
           center={this.state.center}
-          zoom={10}
+          zoom={12}
           >
           {
             locations.map(place => {
