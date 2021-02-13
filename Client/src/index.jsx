@@ -1,6 +1,6 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Map from './components/Map.jsx';
+import Foodie from './components/Foodie.jsx';
 
-ReactDOM.render(<Map />, document.getElementById("app"));
+ReactDOM.render(<Foodie />, document.getElementById("app"));

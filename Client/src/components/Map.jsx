@@ -11,9 +11,9 @@ class Map extends React.Component {
     }
   }
 
-  componentDidMount(){
-    console.log('mounted')
-  }
+  // componentDidMount(){
+  //   console.log('mounted')
+  // }
 
   render(){
     return (

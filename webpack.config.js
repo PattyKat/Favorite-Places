@@ -24,6 +24,7 @@ module.exports = {
   plugins: [
     new Dotenv()
   ],
+  devtool: 'inline-source-map',
   mode: 'development',
   resolve: {
     extensions: ['*', '.js', '.jsx'],
