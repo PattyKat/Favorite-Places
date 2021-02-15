@@ -6,9 +6,9 @@ const Login = (props) => {
   const [password, setpassword]= useState('');
 
   const handleSubmit=(event)=>{
-    console.log(event.target.name);
-    props.changeView();
     event.preventDefault();
+    console.log(userName, password);
+    props.loginHandler();
   }
 
     return (
@@ -23,7 +23,8 @@ const Login = (props) => {
           Password:
           <input type="text" name="password" value={password} onChange={(event)=> setpassword(event.target.value)}/>
         </label>
-        <button type="submit" value="LOGIN" />
+        <br/>
+        <input type="submit" value="LOGIN" />
       </form>
       <br/>
       <p>Or</p>

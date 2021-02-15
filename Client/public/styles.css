@@ -16,7 +16,19 @@ span {
   font-size:20px;
   color:antiquewhite;
 }
-/* #app {
-  margin-left: 20%;
-  margin-top: 20px;
-} */
+
+#header {
+  top: 0px;
+  margin-bottom: 50px;
+  text-align: center;
+  align-items: center;
+  background-color: #f9fafb;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#mapContainer{
+ background-color: bisque;
+ padding: 20px;
+}
