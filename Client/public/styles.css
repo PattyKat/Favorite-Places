@@ -40,44 +40,50 @@ span {
  height: 400px;
  width: 350px;
  margin: 20px;
+ border-radius: 5%;
 }
 
 #addPlaceContainer{
- background-color: bisque;
+ background-color: #DDEECA;
  padding: 20px;
  height: 200px;
  width: 350px;
  display: block;
  margin: 20px;
+ border-radius: 5%;
 }
 #images{
   display: inline-block;
 }
 
 #friendContainer{
-  background-color: bisque;
+  background-color: #CAECFF;
   height: 200px;
   width: 350px;
   margin: 20px;
+  padding: 20px;
+  border-radius: 5%;
 }
 #modalContainer{
-  background-color: bisque;
+ background-color: #F1E2FF;
  padding: 20px;
  height: 400px;
  width: 350px;
  margin: 20px;
+ border-radius: 5%;
 }
 #modalCarouselContainer{
-  background-color: bisque;
+  background-color: paleturquoise;
   padding: 20px;
   height: 400px;
   width: 450px;
   margin: 20px;
+  border-radius: 5%;
 }
 
 #friendList{
   display: block;
-  background-color: bisque;
+  background-color:#CAECFF;
 }
 .list {
   margin-bottom: 15px;;
