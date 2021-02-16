@@ -7,6 +7,10 @@ const ModalMap = (props)=> {
   const { center, markers } = props.current;
   const mapStyle = { width: '300px', height: '300px'};
 
+  const activateImages = ()=> {
+    props.activateCarousel();
+  }
+
 
     return (
       <LoadScript googleMapsApiKey={process.env.GOOGLE_API_KEY}>
@@ -19,7 +23,7 @@ const ModalMap = (props)=> {
 
             markers.map(place => {
               return (
-                <Marker key={place.name} position={place.location} />
+                <Marker key={place.name} position={place.location} onClick={activateImages}/>
               )
             })
           }

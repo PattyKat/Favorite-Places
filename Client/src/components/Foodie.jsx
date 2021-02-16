@@ -5,6 +5,8 @@ import AddRestaurant from './AddRestaurant.jsx';
 import FriendList from './FriendList.jsx';
 import ModalMap from './ModalMap.jsx';
 import dummyData from '../dummyData.js';
+import Images from './Images.jsx';
+
 const kris = {
   name:'Kris',
   mapId:3,
@@ -52,6 +54,7 @@ const anthony = {
 
 const Foodie = (props) => {
   const[modal, setModal]=useState(false);
+  const[carousel, setCarousel]=useState(false);
   const[current, setCurrent]=useState(0);
   const[info, setInfo]=useState(dummyData);
   const [count, setCount]=useState(0);
@@ -74,7 +77,13 @@ const Foodie = (props) => {
     maps.push(kris);
     setInfo(maps);
     }
+  }
+  const activateCarousel = () => {
+    setCarousel(true);
+  }
 
+  const carouselHandler = () =>{
+    setCarousel(false);
   }
 
 
@@ -102,7 +111,14 @@ const Foodie = (props) => {
           <div id="modal" >
             <button onClick={onModalClickHandler}>X</button>
             <h3>{`${info[current]['name']}'s Map`}</h3>
-            <ModalMap current={info[current]} />
+            <ModalMap current={info[current]} activateCarousel={activateCarousel}/>
+          </div>
+        </div>
+          <div id="modalCarouselContainer" style= { carousel ? {display: 'block'}: {display: 'none'}}>
+          <div id="carousel" >
+            <button onClick={carouselHandler}>X</button>
+            <h3>{`${info[current]['name']}'s Reviews`}</h3>
+            <Images current={info[current]} />
           </div>
         </div>
       </div>

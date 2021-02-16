@@ -20,6 +20,7 @@
   "homepage": "https://github.com/PattyKat/Favorite-Places#readme",
   "dependencies": {
     "@babel/preset-env": "^7.12.11",
+    "@brainhubeu/react-carousel": "^1.19.26",
     "@react-google-maps/api": "^2.1.1",
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",

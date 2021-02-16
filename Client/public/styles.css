@@ -49,6 +49,9 @@ span {
  display: block;
  margin: 20px;
 }
+#images{
+  display: inline-block;
+}
 
 #friendContainer{
   background-color: bisque;
@@ -62,6 +65,13 @@ span {
  height: 400px;
  width: 350px;
  margin: 20px;
+}
+#modalCarouselContainer{
+  background-color: bisque;
+  padding: 20px;
+  height: 400px;
+  width: 450px;
+  margin: 20px;
 }
 
 #friendList{
