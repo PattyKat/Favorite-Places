@@ -3,14 +3,17 @@ import React, {useState} from 'react';
 const AddRestaurant = (props) => {
   const[restaurant, setRestaurant] =useState('');
   const[review, setReview]= useState('');
-  const[food, setFood]= useState('');
 
   const submitHandler = (event) => {
     event.preventDefault();
-    console.log(restaurant, food, review);
+    //console.log(restaurant, review);
+    const newPlace = {name: restaurant, location: {
+      lat: 39.32119,
+      lng: -76.62415
+    }, review: review}
+    props.addPlace(newPlace);
     setRestaurant('');
     setReview('');
-    setFood('');
   }
 
   return (

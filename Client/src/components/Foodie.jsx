@@ -52,7 +52,6 @@ const anthony = {
 
 };
 
-
 const Foodie = (props) => {
   const[modal, setModal]=useState(false);
   const[carousel, setCarousel]=useState(false);
@@ -94,6 +93,11 @@ const Foodie = (props) => {
     setMyMap(true);
     setCarousel(true);
   }
+  const addPlace = (place)=>{
+    let places = myData;
+    places['markers'].push(place);
+    setMyData(places);
+  }
 
 
     return (
@@ -107,7 +111,7 @@ const Foodie = (props) => {
         <div id="addPlaceContainer">
           <h3>Add Restaurant</h3>
           <div id="addPlace">
-            <AddRestaurant />
+            <AddRestaurant addPlace={addPlace}/>
           </div>
         </div>
         <div id="friendContainer">

@@ -90,14 +90,6 @@ const locations =
      lng: -76.62211
    },
    review:'filler'
-  },
-  {
-    name: "Blacksauce Kitchen",
-    location: {
-     lat: 39.32119,
-     lng: -76.62415
-   },
-   review:'filler'
   }
 ]
   };
