@@ -22,10 +22,11 @@ const FriendList = (props) => {
     props.modalActivate(event.target.value);
   }
 
-  const listItems = friends.map(({name, mapId}, idx)=> {
+  const listItems = friends.map(({name, mapId, avatar}, idx)=> {
      return (
 
-       <div key={idx}>
+       <div id="friendElement" key={idx}>
+         <img src={avatar} />
        <button key={idx} value={idx} onClick={onClickHandler}>{name}</button>
        </div>
      )

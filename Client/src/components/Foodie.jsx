@@ -32,7 +32,7 @@ const kris = {
       image:'https://i.imgur.com/Wt8vVjr.jpg'
     }
   ],
-  avatar: 'url placeholder',
+  avatar: 'https://www.eatright.org/-/media/eatrightimages/health/weightloss/faddiets/keto-diet1125427377.jpg',
 };
 
 const anthony = {
@@ -53,7 +53,7 @@ const anthony = {
       image:'https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,h_130,f_auto,g_auto,q_auto,dpr_auto,c_fill/exnnpx3qrlpyxuwxeiaw'
     }
   ],
-  avatar: 'url placeholder',
+  avatar: 'https://s3-media0.fl.yelpcdn.com/bphoto/SLewuLgpoCtkcb1_fH3fkw/l.jpg',
 
 };
 
@@ -117,6 +117,11 @@ const Foodie = (props) => {
           <h3>Add Restaurant</h3>
           <div id="addPlace">
             <AddRestaurant addPlace={addPlace}/>
+          </div>
+          <div className="iconContainer">
+            <div id='iconInstagram'></div>
+            <div id='iconFacebook'></div>
+            <div id='iconLinkedIn'></div>
           </div>
         </div>
         <div id="friendContainer">

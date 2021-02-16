@@ -1,3 +1,4 @@
+
 const dummy = [
   {
     name:'Christina',
@@ -23,7 +24,7 @@ const dummy = [
         image:'https://lh3.googleusercontent.com/proxy/89Nol98a0YAqmhsyMo7RKDBJfNTPW7W-_QmXdwFCNEQtUAgf4dH0ieWx4ZaLU0V6zKvao1eVQ1aGUONjBMKBo2tUXCYde2ZEeoRjRjqYZV3fYcxjnappbBfoQSJTKH8cXsMURD-O'
       }
     ],
-    avatar: 'url placeholder',
+    avatar: 'https://minimalistbaker.com/wp-content/uploads/2015/04/30-minute-CHICKPEA-Sweet-Potato-BUDDHA-Bowls-A-complete-meal-packed-with-protein-fiber-and-healthy-fats-with-a-STELLAR-Tahini-Lemon-Maple-Sauce-vegan-glutenfree-healthy.jpg',
   },
   {
     name:'Kyle',
@@ -49,7 +50,7 @@ const dummy = [
         image:'https://media-cdn.tripadvisor.com/media/photo-s/06/c7/ff/7f/ted-s-cafe-escondido.jpg'
       }
     ],
-    avatar: 'url placeholder',
+    avatar: 'https://beeflovingtexans.com/wp-content/uploads/2016/08/Traditional-Tex-Mex-Fajitas-Thumbnail-800x627.jpg',
   }
 ];
 
