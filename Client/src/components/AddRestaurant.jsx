@@ -17,17 +17,13 @@ const AddRestaurant = (props) => {
     <form onSubmit={submitHandler}>
       <label>
         Enter Restaurant Name:
-        <input type="text" name="restaurant" value={restaurant} onChange={(event)=>setRestaurant(event.target.value)}/>
-      </label>
-      <br/>
-      <label>
-        What did you eat?:
-        <input type="text" name="food" value={food} onChange={(event)=>setFood(event.target.value)}/>
+        <input type="text" name="restaurant" value={restaurant} onChange={(event)=>setRestaurant(event.target.value)} requiered="true"/>
       </label>
       <br/>
       <label>
         Enter your Review:
-        <textarea type="text" name="review" value={review} onChange={(event)=>setReview(event.target.value)}>What Do you reccommend?  How was your experience?</textarea>
+        <br/>
+        <textarea type="text" name="review" value={review} onChange={(event)=>setReview(event.target.value)} placeholder="write about your visit here..." requiered="true"></textarea>
       </label>
       <br/>
       <input type="submit" value="Add Map Marker" />

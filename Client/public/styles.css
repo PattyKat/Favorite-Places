@@ -56,6 +56,13 @@ span {
   width: 350px;
   margin: 20px;
 }
+#modalContainer{
+  background-color: bisque;
+ padding: 20px;
+ height: 400px;
+ width: 350px;
+ margin: 20px;
+}
 
 #friendList{
   display: block;

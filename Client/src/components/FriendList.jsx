@@ -2,7 +2,8 @@ import React, { useState} from 'react';
 
 const FriendList = (props) => {
   const[name, setName]=useState('');
-  const friends = [{name:'Kris', mapId: 1}, {name:'Christina', mapId:2}, {name: 'Kyle', mapId: 3}];
+  // const friends = [{name:'Christina', mapId:2}, {name: 'Kyle', mapId: 3}];
+  const friends = props.friends;
 
   const onKeyDownHandler = (event) => {
     // 'keypress' event misbehaves on mobile so we track 'Enter' key via 'keydown' event
@@ -14,14 +15,18 @@ const FriendList = (props) => {
     }
   }
   const onSubmit = () => {
-    console.log(name);
+    //console.log(name);
+    props.addMap(name);
+  }
+  const onClickHandler = (event) => {
+    props.modalActivate(event.target.value);
   }
 
   const listItems = friends.map(({name, mapId}, idx)=> {
      return (
 
        <div key={idx}>
-       <button key={idx} value={mapId} onClick={(event)=>console.log(event.target.value)}>{name}</button>
+       <button key={idx} value={idx} onClick={onClickHandler}>{name}</button>
        </div>
      )
   })
@@ -32,7 +37,7 @@ const FriendList = (props) => {
       {listItems}
      </div>
     <label>
-      Add Friend:
+      Add Map:
       <input type="text" value={name} onChange={(event)=>setName(event.target.value)} onKeyDown={onKeyDownHandler}/>
     </label>
    </div>
