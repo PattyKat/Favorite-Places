@@ -16,17 +16,20 @@ const kris = {
     {
       name:'Goldy\'s Breakfast Bistro',
       location: {lat: 43.61492, lng: -116.20237},
-      review:'If you want the best breakfast in town and the best bang for your buck this is definitely the place to go! Breakfast combos are always a great way to go and they\'re salmon cakes are one of my favorites! '
+      review:'If you want the best breakfast in town and the best bang for your buck this is definitely the place to go! Breakfast combos are always a great way to go and they\'re salmon cakes are one of my favorites! ',
+      image:'https://foodtravelist.com/wp-content/uploads/2019/08/Basque-Omelette-Goldys-Boise-Idaho.jpg'
     },
     {
       name:'Bardenay Restaurant & Distillery',
       location: {lat: 43.61395, lng: -116.20195 },
-      review:'Food was all delicious. Very cool building and atmosphere. '
+      review:'Food was all delicious. Very cool building and atmosphere. ',
+      image:'https://secureservercdn.net/198.71.233.197/4de.67b.myftpupload.com/wp-content/uploads/2017/03/Bardenay-Eagle.1.jpg'
     },
     {
       name:'Flying Pie',
       location: {lat: 43.59616 , lng: -116.19303 },
-      review:'Without a doubt, if you want a perfect cooked pizza, this is the place.'
+      review:'Without a doubt, if you want a perfect cooked pizza, this is the place.',
+      image:'https://i.imgur.com/Wt8vVjr.jpg'
     }
   ],
   avatar: 'url placeholder',
@@ -40,12 +43,14 @@ const anthony = {
     {
       name:'Minami Teriyaki',
       location: {lat: 47.75323 , lng: -122.15347 },
-      review:'This is my to go place for Teriyaki.'
+      review:'This is my to go place for Teriyaki.',
+      image:'https://raster-static.postmates.com/?url=com.postmates.img.prod.s3.amazonaws.com/5c1c108d-12bc-4f81-a7d7-7959792e71fc/orig.jpg&quality=90&w=1500&h=900&mode=crop&format=jpg&v=4'
     },
     {
       name:'Irene Thai Cusine',
       location: {lat: 47.75528, lng: -122.16251},
-      review:'I ordered online and they were very professional and prepared it on time. '
+      review:'I ordered online and they were very professional and prepared it on time. ',
+      image:'https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_150,h_130,f_auto,g_auto,q_auto,dpr_auto,c_fill/exnnpx3qrlpyxuwxeiaw'
     }
   ],
   avatar: 'url placeholder',

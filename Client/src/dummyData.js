@@ -7,17 +7,20 @@ const dummy = [
       {
         name:'Crakheads',
         location: {lat: 33.16021, lng: -117.34956},
-        review:'The tots were next level and you are just a stones throw from the  ocean or the chocolateria or delicious donuts. Its a great place to eat,drink and enjoy Carlsbad'
+        review:'The tots were next level and you are just a stones throw from the  ocean or the chocolateria or delicious donuts. Its a great place to eat,drink and enjoy Carlsbad',
+        image:'https://s3-media0.fl.yelpcdn.com/bphoto/tQ9nJ8e3_i_RaVMCE-8L1A/o.jpg'
       },
       {
         name:'Casa De Bandini',
         location: {lat: 33.06881, lng: -117.26343},
-        review:'Everything on the Menu is delicious. All of their Margarita\'s are amazing. The General Manager Gilbert Gastelum was very personable and even took a selfie with us. '
+        review:'Everything on the Menu is delicious. All of their Margarita\'s are amazing. The General Manager Gilbert Gastelum was very personable and even took a selfie with us. ',
+        image:'https://media-cdn.tripadvisor.com/media/photo-s/05/3e/f8/19/casa-de-bandini.jpg'
       },
       {
         name:'Pizza Port',
         location: {lat: 33.15877, lng: -117.35211},
-        review:'This place is one of my favorite places for pizza and a beer.'
+        review:'This place is one of my favorite places for pizza and a beer.',
+        image:'https://lh3.googleusercontent.com/proxy/89Nol98a0YAqmhsyMo7RKDBJfNTPW7W-_QmXdwFCNEQtUAgf4dH0ieWx4ZaLU0V6zKvao1eVQ1aGUONjBMKBo2tUXCYde2ZEeoRjRjqYZV3fYcxjnappbBfoQSJTKH8cXsMURD-O'
       }
     ],
     avatar: 'url placeholder',
@@ -30,17 +33,20 @@ const dummy = [
       {
         name:'Panang Thai Restaurant',
         location: {lat: 35.36465, lng: -97.55312},
-        review:'I have tried multiple items on the menu and I have not found one I didn’t like.'
+        review:'I have tried multiple items on the menu and I have not found one I didn’t like.',
+        image:'https://media-cdn.tripadvisor.com/media/photo-s/11/f6/e2/34/pai-thai-noodles-spring.jpg'
       },
       {
         name:'Hideaway Pizza',
         location: {lat: 35.47440, lng: -97.51516},
-        review:'Aside from amazing pizza, the appetizers and salads are fantastic.'
+        review:'Aside from amazing pizza, the appetizers and salads are fantastic.',
+        image:'https://media-cdn.tripadvisor.com/media/photo-s/10/4e/82/51/can-t-decide-the-hideaway.jpg'
       },
       {
         name:'Ted\'s Cafe Escondido',
         location: {lat: 35.46169, lng: -97.65193},
-        review:'The Margarita with Ted\'s Barrel select Tequila is SUPERB!!! I loved ALL 3 of the Tres Leches options. You have to try them, you won\'t be disappointed.'
+        review:'The Margarita with Ted\'s Barrel select Tequila is SUPERB!!! I loved ALL 3 of the Tres Leches options. You have to try them, you won\'t be disappointed.',
+        image:'https://media-cdn.tripadvisor.com/media/photo-s/06/c7/ff/7f/ted-s-cafe-escondido.jpg'
       }
     ],
     avatar: 'url placeholder',

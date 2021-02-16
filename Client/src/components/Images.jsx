@@ -20,6 +20,8 @@ const Images = (props) =>{
         <div>
           <p>{reviews[index]['name']}</p>
           <br/>
+          <img src={reviews[index]['image']} />
+          <br/>
           <p>{reviews[index]['review']}</p>
         </div>
       <button className="horizontal-scroll-rightClick" onClick={onClickRightHandler} type="button">

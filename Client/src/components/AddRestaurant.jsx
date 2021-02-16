@@ -10,7 +10,7 @@ const AddRestaurant = (props) => {
     const newPlace = {name: restaurant, location: {
       lat: 39.32119,
       lng: -76.62415
-    }, review: review}
+    }, review: review, image:'http://www.blacksaucekitchen.com/wp/wp-content/files_mf/apricotcompote41.jpg'}
     props.addPlace(newPlace);
     setRestaurant('');
     setReview('');

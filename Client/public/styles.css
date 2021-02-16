@@ -55,6 +55,10 @@ span {
 #images{
   display: inline-block;
 }
+#images img {
+  height: 200px;
+  width: 300px;
+}
 
 #friendContainer{
   background-color: #CAECFF;
@@ -75,7 +79,7 @@ span {
 #modalCarouselContainer{
   background-color: paleturquoise;
   padding: 20px;
-  height: 400px;
+  height: 500px;
   width: 450px;
   margin: 20px;
   border-radius: 5%;
