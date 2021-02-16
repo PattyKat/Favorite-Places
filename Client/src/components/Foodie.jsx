@@ -6,6 +6,7 @@ import FriendList from './FriendList.jsx';
 import ModalMap from './ModalMap.jsx';
 import dummyData from '../dummyData.js';
 import Images from './Images.jsx';
+import locations from '../locations.js';
 
 const kris = {
   name:'Kris',
@@ -58,6 +59,8 @@ const Foodie = (props) => {
   const[current, setCurrent]=useState(0);
   const[info, setInfo]=useState(dummyData);
   const [count, setCount]=useState(0);
+  const[myData, setMyData]=useState(locations);
+  const[myMap, setMyMap]=useState(false);
 
   const modalActivate = (idx) => {
     setCurrent(idx);
@@ -79,11 +82,17 @@ const Foodie = (props) => {
     }
   }
   const activateCarousel = () => {
+    setMyMap(false);
     setCarousel(true);
   }
 
   const carouselHandler = () =>{
+    //setMyMap(false);
     setCarousel(false);
+  }
+  const activateCarouselData =()=>{
+    setMyMap(true);
+    setCarousel(true);
   }
 
 
@@ -92,7 +101,7 @@ const Foodie = (props) => {
         <div id="mapContainer">
           <h3>My Map</h3>
           <div id="map">
-            <Map />
+            <Map data={myData} activateCarouselData={activateCarouselData}/>
           </div>
         </div>
         <div id="addPlaceContainer">
@@ -117,8 +126,8 @@ const Foodie = (props) => {
           <div id="modalCarouselContainer" style= { carousel ? {display: 'block'}: {display: 'none'}}>
           <div id="carousel" >
             <button onClick={carouselHandler}>X</button>
-            <h3>{`${info[current]['name']}'s Reviews`}</h3>
-            <Images current={info[current]} />
+            <h3>{!myMap ? `${info[current]['name']}'s Reviews`: 'My Reviews'}</h3>
+            <Images current={!myMap ? info[current] : myData} idx={!myMap ? info[current]['markers'].length-1: myData['markers'].length-1}/>
           </div>
         </div>
       </div>

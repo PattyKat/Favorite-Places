@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Images = (props) =>{
-  const[current, setCurrent]=useState(0);
+  const[index, setIndex]=useState(props.idx);
 
   const reviews = props.current['markers'];
 
+
   const onClickRightHandler = () => {
-    if (current >= reviews.length-1) {
-      setCurrent(0);
+    if (index >= reviews.length-1) {
+      setIndex(0);
     } else {
-      setCurrent(current + 1);
+      setIndex(index + 1);
     }
   };
 
@@ -17,9 +18,9 @@ const Images = (props) =>{
 
       <div id="images">
         <div>
-          <p>{reviews[current]['name']}</p>
+          <p>{reviews[index]['name']}</p>
           <br/>
-          <p>{reviews[current]['review']}</p>
+          <p>{reviews[index]['review']}</p>
         </div>
       <button className="horizontal-scroll-rightClick" onClick={onClickRightHandler} type="button">
         <svg color="#2F3337" width="24" height="24" viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">

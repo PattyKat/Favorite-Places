@@ -26,7 +26,8 @@ span {
   height: 30px;
 }
 #flexContainer{
-  display: inline-flex;
+  display: flex;
+  flex-flow: row;
   width: 80%;
   margin: 0 auto;
   padding: 30px;
