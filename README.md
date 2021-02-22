@@ -1,5 +1,5 @@
 # Favorite-Places
-A personal project that I am using to learn to use Google API and showcase my favorite places in Baltimore, Maryland.
+A personal project that I used to learn the Google Javascript Maps API and Place API. 
 
 
 ![alt text](https://repo-screenshots.s3.amazonaws.com/Local+Eats+Screenshot.png)
