@@ -1,5 +1,5 @@
 # Favorite-Places
-A personal project that I used to learn the Google Javascript Maps API and Place API. 
+A personal project that I used to learn the Google Javascript Maps API and Google Places API. 
 
 
 ![alt text](https://repo-screenshots.s3.amazonaws.com/Local+Eats+Screenshot.png)
